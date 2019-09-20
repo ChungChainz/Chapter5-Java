@@ -4,10 +4,10 @@ package debugging;
 // Burger and hot dog are $2.59
 // Grilled cheese and fish are $1.99
 // Fries are 89 cents
-import javax.swing.JOptionPane;
+import javax.swing.*;
 public class FixDebugFive1
 {
-   public static void main(String args[]) throws Exception {
+   public static void main(String args[])  {
       final double HIGH_PRICE = 2.59;
       final double MED_PRICE = 1.99;
       final double LOW_PRICE = 0.89;
@@ -15,7 +15,7 @@ public class FixDebugFive1
       int usersChoice;
       double bill = 0.0;
       usersChoiceString = JOptionPane.showInputDialog(null,
-              "Order please\n1 - Burger\2 - Hotdog" +
+              "Order please\n1 - Burger\n2 - Hotdog" +
                       "\n3 - Grilled cheese\n4 - Fish sandwich");
       usersChoice = Integer.parseInt(usersChoiceString);
       if (usersChoice == 1 | usersChoice == 2)
